@@ -43,7 +43,6 @@ LRESULT CALLBACK WndProc(HWND hwnd , UINT msg , WPARAM wp , LPARAM lp)
 		PostQuitMessage(0);
 		return 0;
 	case WM_ERASEBKGND:
-		//‚±‚ê‚â‚é‚¾‚¯‚Å‚à‘S‘Rˆá‚¤‚¨
 		return 1;
 	case WM_PAINT:
 	{
@@ -116,7 +115,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		}
 		else
 		{
-			//1loop‚Åˆê‹C‚É‚³‚Î‚­
 			for(int i = 0;i < program.size();i++)
 			{
 				if(pc < program.size())
@@ -137,7 +135,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 						break;
 					case '.':
 					case ',':
-						//–³Ž‹
 						break;
 					case '[':
 						if(!data[ptr])
